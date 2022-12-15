@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Home Page</title>
+	
+<style>
+	body{
+		margin:0;
+		font-family: Arial,helvetica,sans-serif;
+	}
+* {
+  box-sizing: border-box;
+}
+
+#banner{
+	width:100%;
+	height: auto;
+	padding-top: 5px;
+	padding-left: 10px;
+	margin: 0px;
+	border:thin #000;
+	float:left;
+	background-color: #305567
+	}
+#navbar{
+	width:100%;
+	height: auto;
+	padding: 2px;
+	margin-left: 0px;
+	float:left;
+	border: thin #000000;
+	background-color: #ca9e00
+	}
+#navbar li{
+	width: 16%;
+	display:inline;
+	padding-left: 8px;
+	float:left;
+	margin-bottom: 5px;
+	margin-left: 9px;
+	}
+#navbar a:link{
+	text-decoration:none;
+	color: #305567;
+	
+}
+#navbar a:hover{
+	text-decoration:none;
+	color: #305567;
+	font-weight:bold;
+}
+#navbar a:visited{
+	text-decoration:none;
+	color: #305567;
+}
+
+#content {
+	width:100%;
+	margin-left: 0px;
+	border: thin #000000;	
+	float:left;
+	min-height:calc(100vh - 10em);
+}
+#footer{
+	width:100%;
+	height: 10em;
+	padding: 1px;
+	margin-left: -8px;
+	float:right;
+	border: thin #0F195C;	
+	background-color: #305567;
+	position: inherit;
+	bottom:0;
+	}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ca9e00; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #305567; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #457a95; 
+}
+	
+	/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+	  .form-container {
+    width: 500;
+    padding: 20px;
+    background: #f2f2f2;
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+  .form-group {
+    margin: 10px 0;
+  }
+  .form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 3px;
+  }
+  .form-group input {
+    height: 30px;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  .form-group textarea {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  .form-group button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+	
+</style>
+</head>
+
+<body>
+<div id="banner">
+	<img src="images/SCC.png" width="15%"/>
+</div>
+<div id="navbar">
+<ul>
+	<li><a href="theme park website.html">Home</a></li>
+	<li><a href="DraytonManor.html">Drayton Manor</a></li>
+	<li><a href="WaterWorld.html">Water World</a></li>
+	<li><a href="AltonTowers.html">Alton Towers</a></li>
+	<li><a href="Information.html">Information</a></li>
+	<li><a href="AboutUs.html">About Us</a></li>
+</ul>
+</div>
+	<div id="content">
+		<h1>Contact Information</h1>
+  <p>Phone: 01785 278 000</p>
+  <p>Address: County Buildings, Martin Street, Stafford, ST16 2LP</p>
+  <p>Email: <a href="mailto:info@staffordshire.gov.uk">info@staffordshire.gov.uk</a></p>
+  <p>Website: <a href="https://www.staffordshire.gov.uk/">https://www.staffordshire.gov.uk/</a></p>
+		<p>Or you can use this contact form underneath for an easy way to inform us of any enquires or issues you have.</p>
+	<div class="form-container">
+  <form action="">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" name="subject" id="subject" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+	
+		
+</div>
+	<div id="footer">
+		<img src="images/SCCfooter1.png">
+	</div>
+</body>
+</html>
